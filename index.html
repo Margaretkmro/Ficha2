@@ -1,0 +1,41 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Formulario</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="estilos.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Padauk&display=swap');
+        </style>
+    <script src="main.js"></script>
+</head>
+<body>
+    <section class="section">
+    <form class="form" name="form" action="Registro.php"method="post">
+        <h1>Formulario de Registro Médico</h1>
+        <label style="font-size: 13px ;">Ingrese RUT del paciente (sin puntos ni guión)</label>
+        <input class="text"type="text"name="RUT" placeholder="Rut" required><p>
+        <input class="text"type="text"name="Nombres" placeholder="Nombres" required><p> 
+        <input class="text"type="text"name="Apellidos" placeholder="Apellidos"required><p>   
+        <input class="text"type="text"name="Direccion" placeholder="Dirección" required><p>  
+        <input class="text"type="text"name="Ciudad"placeholder="Ciudad" required><p> 
+        <input class="text"type="tel"name="Telefono" placeholder="Teléfono"required><p>    
+        <input class="text"type="Email"name="Email" placeholder="Email" required ><p>  
+        <input class="text" type="date"name="Fecha_de_nacimiento"placeholder="Fecha de Nacimiento" required><p>     
+        <input class="text"type="text"name="Estado_civil" placeholder="Estado civil"required><p> 
+        <input class="text"type="text"name="Comentarios"placeholder="Comentarios" required><p class="buton"> 
+          
+        <input class="boton" type="submit" value="Guardar">
+        <input class="boton"type="reset" value="Limpiar">
+        <input class="boton"type="reset" value="Cerrar">
+        
+        
+    </form> 
+    <form class="form" name="form" action="buscar.php"method="post">
+        <input type="text" name="buscar" placeholder="Buscar por apellido"><p> <input class="botton" type="submit" value="Buscar">
+    
+    </form>
+    
+</section>           
+</body>
+</html>
